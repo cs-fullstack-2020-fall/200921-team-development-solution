@@ -1,11 +1,16 @@
+@* setting page title *@
 @{
     ViewData["Title"] = "Catalog";
 }
+@* ref to db context *@
 @model ProductCatolog.DAO.ProductDbContext
 <h1>Product Catalog</h1>
+@* card group *@
 <div class="card-columns">
+    @* iterate over product db set *@
     @foreach (ProductModel item in @Model.products)
     {
+        @* render card with product info *@
         <div class = "card border-primary">
             <div class="card-body">
                 <h5 class="card-title text-primary">@item.productName</h5>

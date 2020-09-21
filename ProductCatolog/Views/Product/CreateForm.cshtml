@@ -1,8 +1,11 @@
+@* setting page title *@
 @{
     ViewData["Title"] = "Add";
 }
+@* ref to Product model *@
 @model ProductCatolog.Models.ProductModel
 <h1>Add a Product</h1>
+@* model bound form *@
 @using (@Html.BeginForm("Add", "Product"))
 {
     <div class="form-group">
