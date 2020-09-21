@@ -8,6 +8,6 @@ namespace ProductCatolog.DAO
         public ProductDbContext(DbContextOptions<ProductDbContext> options) : base(options)
         {
         }
-        DbSet<ProductModel> products{get;set;}
+        public DbSet<ProductModel> products{get;set;}
     }
 }
