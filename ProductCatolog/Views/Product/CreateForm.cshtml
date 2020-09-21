@@ -5,20 +5,20 @@
 <h1>Add a Product</h1>
 @using (@Html.BeginForm("Add", "Product"))
 {
-    <div>
-        @Html.LabelFor(p => p.productName)
-        @Html.TextBoxFor(p => p.productName) 
+    <div class="form-group">
+        @Html.LabelFor(p => p.productName, new{@class = "form-control-label"})
+        @Html.TextBoxFor(p => p.productName, new{@class = "form-control"}) 
     </div>
 
-    <div>
-        @Html.LabelFor(p => p.price)
-        @Html.TextBoxFor(p => p.price)  
+    <div class="form-group">
+        @Html.LabelFor(p => p.price, new{@class = "form-control-label"})
+        @Html.TextBoxFor(p => p.price, new{@class = "form-control"})  
     </div>
 
-    <div>
-        @Html.LabelFor(p => p.quantity)
-        @Html.TextBoxFor(p => p.quantity)   
+    <div class="form-group">
+        @Html.LabelFor(p => p.quantity, new{@class = "form-control-label"})
+        @Html.TextBoxFor(p => p.quantity, new{@class = "form-control"})   
     </div>
 
-    <button type="submit">Add Product</button>
+    <button class = "btn btn-primary" type="submit">Add Product</button>
 }
