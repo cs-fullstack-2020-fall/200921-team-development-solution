@@ -1,8 +1,5 @@
 # 20 09 21 Team Development
 
-## Score : 4/5
-Met requirements and PRs looked good. Be sure to include comments and a postman collection (or two if you both want to include one) next time. 
-
 [Git Branching](https://www.atlassian.com/git/tutorials/using-branches) | [Git Process](https://github.com/Kevin-CodeCrew/coding_concepts_sprint_3)
 
 ### Terminal Commands
