@@ -1,4 +1,13 @@
 @{
     ViewData["Title"] = "Catalog";
 }
+@model ProductCatolog.DAO.ProductDbContext
 <h1>Product Catalog</h1>
+<div>
+    @foreach (ProductModel item in @Model.products)
+    {
+        <h1>@item.productName</h1>
+        <h3>$ @item.price</h3>
+        <h3>@item.quantity items</h3>
+    }
+</div>
