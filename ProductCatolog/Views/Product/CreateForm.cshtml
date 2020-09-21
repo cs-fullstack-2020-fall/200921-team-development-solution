@@ -1,4 +1,24 @@
 @{
     ViewData["Title"] = "Add";
 }
+@model ProductCatolog.Models.ProductModel
 <h1>Add a Product</h1>
+@using (@Html.BeginForm("Add", "Product"))
+{
+    <div>
+        @Html.LabelFor(p => p.productName)
+        @Html.TextBoxFor(p => p.productName) 
+    </div>
+
+    <div>
+        @Html.LabelFor(p => p.price)
+        @Html.TextBoxFor(p => p.price)  
+    </div>
+
+    <div>
+        @Html.LabelFor(p => p.quantity)
+        @Html.TextBoxFor(p => p.quantity)   
+    </div>
+
+    <button type="submit">Add Product</button>
+}

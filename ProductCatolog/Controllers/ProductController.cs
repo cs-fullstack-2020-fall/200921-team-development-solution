@@ -23,6 +23,7 @@ namespace ProductCatolog.Controllers
             return View();
         }
         // add to db
+        [HttpPost]
         public IActionResult Add(ProductModel newProduct)
         {
             // check the form data is valid
